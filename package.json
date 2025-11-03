@@ -1,0 +1,34 @@
+{
+  "name": "wasm-image",
+  "version": "0.1.0",
+  "description": "High-performance image processing library in WebAssembly",
+  "main": "pkg/wasm_image.js",
+  "types": "pkg/wasm_image.d.ts",
+  "files": [
+    "pkg/"
+  ],
+  "scripts": {
+    "build": "wasm-pack build --target web --release",
+    "build:dev": "wasm-pack build --target web --dev",
+    "build:nodejs": "wasm-pack build --target nodejs --release",
+    "test": "wasm-pack test --headless --firefox",
+    "benchmark": "node benchmark/benchmark.js",
+    "dev": "npm run build:dev && node benchmark/benchmark.js"
+  },
+  "keywords": [
+    "image",
+    "processing",
+    "webassembly",
+    "wasm",
+    "performance",
+    "filters",
+    "effects"
+  ],
+  "author": "Patrick Rosales",
+  "license": "MIT",
+  "devDependencies": {
+    "wasm-pack": "^1.3.4",
+    "canvas": "^2.11.2"
+  },
+  "dependencies": {}
+}
