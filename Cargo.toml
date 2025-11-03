@@ -24,4 +24,4 @@ lto = true          # Enable Link Time Optimization
 codegen-units = 1   # Better optimization, slower compile
 
 [dev-dependencies]
-wasm-bindgen-test = "1"
+wasm-bindgen-test = "0.3"
