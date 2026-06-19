@@ -202,8 +202,8 @@ async function runBenchmarks() {
   // Import WASM module (for Node.js testing)
   let ImageProcessor;
   try {
-    // Try loading from built WASM module
-    const wasmModule = await import('../pkg/wasm_image.js');
+    // Try loading from built WASM module (Node.js CommonJS build)
+    const wasmModule = require('../pkg/wasm_image.js');
     ImageProcessor = wasmModule.ImageProcessor;
   } catch (e) {
     console.error('Note: WASM module not found. Make sure to run: npm run build');

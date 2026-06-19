@@ -85,7 +85,7 @@ pub fn blur_gaussian(data: &mut [u8], width: u32, height: u32, radius: f32) {
             }
             // Copy alpha
             let idx = (y * width + x) * 4 + 3;
-            data[idx] = temp[idx + 3];
+            data[idx] = temp[idx];
         }
     }
 }
