@@ -28,19 +28,15 @@ Benchmark results on 1024x1024 images:
 
 ## Installation
 
-```bash
-npm install wasm-image
-```
-
 ## Building from Source
 
 Requires:
 - [Rust](https://rustup.rs/) (latest stable)
-- [wasm-pack](https://rustwasm.org/wasm-pack/installer/)
+- [wasm-pack](https://github.com/rustwasm/wasm-pack)
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/wasm-image.git
+git clone https://github.com/patrickrosales/wasm-image.git
 cd wasm-image
 
 # Install dependencies
@@ -430,10 +426,8 @@ requestAnimationFrame(processFrame);
 ## Examples
 
 See the `examples/` directory for:
-- Real-time camera filter application
-- Batch image processing
-- Instagram filter implementation
-- Video frame processing
+- `demo.html` — Interactive demo with real-time filter previews
+- `index.js` — Example JS usage and filter showcase
 
 ## Benchmarking
 
@@ -532,11 +526,11 @@ Patrick Rosales
 
 Built with:
 - [Rust](https://www.rust-lang.org/)
-- [wasm-pack](https://rustwasm.org/wasm-pack/)
+- [wasm-pack](https://github.com/rustwasm/wasm-pack)
 - [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen)
 
 ## Further Reading
 
 - [WebAssembly Specification](https://webassembly.org/)
-- [Rust WASM Book](https://rustwasm.org/docs/book/)
+- [Rust WASM Book](https://rustwasm.github.io/docs/book/)
 - [Image Processing Algorithms](https://en.wikipedia.org/wiki/Digital_image_processing)

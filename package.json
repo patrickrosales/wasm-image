@@ -27,7 +27,6 @@
   "author": "Patrick Rosales",
   "license": "MIT",
   "devDependencies": {
-    "canvas": "^2.11.2",
-    "wasm-pack": "^0.0.0"
+    "canvas": "^2.11.2"
   }
 }

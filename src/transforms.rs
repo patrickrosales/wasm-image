@@ -29,7 +29,6 @@ pub fn resize(data: &[u8], width: u32, height: u32, new_width: u32, new_height: 
 pub fn rotate(data: &[u8], width: u32, height: u32) -> Vec<u8> {
     let mut output = vec![0u8; data.len()];
     let new_width = height;
-    let new_height = width;
 
     for y in 0..height {
         for x in 0..width {
