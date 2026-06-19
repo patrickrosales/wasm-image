@@ -65,9 +65,9 @@ pub fn edge_detect(data: &mut [u8], width: u32, height: u32) {
                     let idx = (pixel_y * width + pixel_x) * 4;
 
                     // Use grayscale value
-                    let gray = (0.299 * data[idx] as f32
+                    let gray = 0.299 * data[idx] as f32
                         + 0.587 * data[idx + 1] as f32
-                        + 0.114 * data[idx + 2] as f32);
+                        + 0.114 * data[idx + 2] as f32;
 
                     gx += gray * sobel_x[ky][kx];
                     gy += gray * sobel_y[ky][kx];
